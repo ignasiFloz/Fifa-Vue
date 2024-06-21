@@ -5,9 +5,36 @@ import { HomeComponent } from "./home/home.component";
 import { RouterModule } from "@angular/router";
 
 const routes = [
-    {path: '', component: HomeComponent},
-    {path: ':id', component: PlayerDetailsComponent },
-    {path: ':id/videos', component: PlayerVideosComponent }
+    { 
+        path:'',
+        data: {
+            breadcrumb: 'HOME'
+          },
+        children: [
+
+            { path: '',
+                data: {
+                    breadcrumb: null
+                }, 
+                component: HomeComponent 
+            },
+            { 
+                path: ':id', 
+                data: {
+                    breadcrumb: 'PLAYERS'
+                },
+                component: PlayerDetailsComponent 
+            },
+            { 
+                path: ':id/videos', 
+                data: {
+                    breadcrumb: 'Player Videos'
+                },
+                component: PlayerVideosComponent 
+            }
+        ]
+    }
+
 ]
 
 @NgModule({
