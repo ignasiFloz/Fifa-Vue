@@ -10,6 +10,7 @@ import { CoreModule } from './core/core.module';
 import { FifaModule } from './modules/fifa/fifa.module';
 
 
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -30,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FifaModule
+    FifaModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
