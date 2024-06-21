@@ -6,7 +6,6 @@ const routes: Routes = [
   {path: 'fifa', loadChildren: () => import('./modules/fifa/fifa.module').then(m => m.FifaModule)}
 ];
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
