@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
@@ -8,9 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'Fifa-Vue';
   selectedLanguage = 'es';
-  translateService = Inject(TranslateService);
  
-  constructor( ){
+  constructor(private translateService: TranslateService) {
   this.translateService.setDefaultLang('en');
   this.selectedLanguage = 'en';
   this.translateService.use(this.selectedLanguage);
