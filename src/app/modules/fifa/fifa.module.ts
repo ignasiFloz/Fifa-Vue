@@ -14,8 +14,8 @@ import { FifaRoutingModule } from './fifa-routing.module';
     PlayerVideosComponent
   ],
   imports: [
-    FifaRoutingModule,
-    CommonModule
+    CommonModule,
+    FifaRoutingModule
   ]
 })
 export class FifaModule { }
