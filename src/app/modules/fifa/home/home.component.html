@@ -1,32 +1,11 @@
-<div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-            <img src="../../../../assets/images/YingJie-profile-pic.png" alt="Ying Jie">
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-            <img src="../../../../assets/images/WuYuhang-profile-pic.png" alt="Wu Yuhang">
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-            <img src="../../../../assets/images/YeDaoxin-profile-pic.png" alt="Ye Daoxin">
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-            <img src="../../../../assets/images/WangTenda-profile-pic.png" alt="Wang Tenda">
-        </div>
-      </div>
-    </div>
-  </div>
 
+<div class="row">
+  <ng-container *ngFor="let player of players.players">
+    <div class="col-sm-3">
+      <div class="card" (click)="viewPlayerDetails(player.id)">
+        <img [src]="player.imageUrl" alt="Player Image">
+      </div>
+    </div>
+  </ng-container>
+</div>
       

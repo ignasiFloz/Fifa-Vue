@@ -6,4 +6,6 @@ export interface IPlayer {
     dribbling: number;
     vision: number;
     ballControl: number;
+    imageUrl: string;
+    cardUrl: string;
 }

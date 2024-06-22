@@ -16,7 +16,7 @@
             "dribbling": 34,
             "vision": 56,
             "ballControl": 46,
-            "imageUrl": "../images/YingJie-profile.pic.png",
+            "imageUrl": "../../../../assets/images/YingJie-profile-pic.png",
             "cardUrl": "../images/card-yin-jie"
         },
         {
@@ -35,7 +35,7 @@
             "dribbling": 54,
             "vision": 66,
             "ballControl": 56,
-            "imageUrl": "../images/YeDaoxin-profile.pic.png",
+            "imageUrl": "../../../../assets/images/YeDaoxin-profile-pic.png",
             "cardUrl": "../images/card-ye-daoxin"
         },
         {
@@ -54,7 +54,7 @@
             "dribbling": 54,
             "vision": 50,
             "ballControl": 66,
-            "imageUrl": "../images/WuYuhang-profile.pic.png",
+            "imageUrl": "../../../../assets/images/WuYuhang-profile-pic.png",
             "cardUrl": "../images/card-wu-yuhang"
         },
         {
@@ -73,7 +73,7 @@
             "dribbling": 60,
             "vision": 50,
             "ballControl": 65,
-            "imageUrl": "../images/WangTengda-profile.pic.png",
+            "imageUrl": "../../../../assets/images/WangTenda-profile-pic.png",
             "cardUrl": "../images/card-wang-tengda"
         }
         

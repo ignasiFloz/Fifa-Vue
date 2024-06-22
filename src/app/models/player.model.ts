@@ -9,6 +9,8 @@ export class Player extends Person implements IPlayer{
     dribbling: number;
     vision: number;
     ballControl: number;
+    imageUrl: string;
+    cardUrl: string;
 
     constructor(player: IPlayer & Person){
         super(player);
@@ -19,6 +21,8 @@ export class Player extends Person implements IPlayer{
         this.dribbling = player.dribbling;
         this.vision = player.vision;
         this.ballControl = player.ballControl;
+        this.imageUrl = player.imageUrl;
+        this.cardUrl = player.cardUrl;
     }
  
 }
