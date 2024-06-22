@@ -1,12 +1,10 @@
 <div class="row">
-  <div class="col-sm-3" >
-    <ng-container *ngFor="let player of players">
+  <ng-container *ngFor="let player of players.players">
+    <div class="col-sm-3">
       <div class="card" (click)="viewPlayerDetails(player.id)">
-        <p>{{ player.name }}</p>
-        <img [src]= "player.imageUrl">
+        <img [src]="player.imageUrl" alt="Player Image">
       </div>
-    </ng-container>
-  </div>
+    </div>
+  </ng-container>
 </div>
-
       
