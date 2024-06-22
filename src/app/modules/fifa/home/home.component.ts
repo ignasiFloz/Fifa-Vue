@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   fifaService = inject(FifaService);
   router = inject(Router);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  players: any;
+  players: any = [];
   
   ngOnInit() {
     this.allPlayers();
