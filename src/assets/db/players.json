@@ -15,7 +15,9 @@
             "shortPassing": 49,
             "dribbling": 34,
             "vision": 56,
-            "ballControl": 46
+            "ballControl": 46,
+            "imageUrl": "../images/YingJie-profile.pic.png",
+            "cardUrl": "../images/card-yin-jie"
         },
         {
             "id": "2",
@@ -32,7 +34,9 @@
             "shortPassing": 58,
             "dribbling": 54,
             "vision": 66,
-            "ballControl": 56
+            "ballControl": 56,
+            "imageUrl": "../images/YeDaoxin-profile.pic.png",
+            "cardUrl": "../images/card-ye-daoxin"
         },
         {
             "id": "3",
@@ -49,7 +53,9 @@
             "shortPassing": 68,
             "dribbling": 54,
             "vision": 50,
-            "ballControl": 66
+            "ballControl": 66,
+            "imageUrl": "../images/WuYuhang-profile.pic.png",
+            "cardUrl": "../images/card-wu-yuhang"
         },
         {
             "id": "4",
@@ -66,7 +72,9 @@
             "shortPassing": 68,
             "dribbling": 60,
             "vision": 50,
-            "ballControl": 65
+            "ballControl": 65,
+            "imageUrl": "../images/WangTengda-profile.pic.png",
+            "cardUrl": "../images/card-wang-tengda"
         }
         
     ]
