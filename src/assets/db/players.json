@@ -1,0 +1,73 @@
+{
+    "players":[
+        {
+            "id": "1",
+            "name": "Yin Jie",
+            "age": 21,
+            "weight": 60,
+            "height": 160,
+            "speed": 85,
+            "strength": 60,
+            "agility": 50,
+            "shotPower": 56,
+            "penalties": 42,
+            "longPassing": 56,
+            "shortPassing": 49,
+            "dribbling": 34,
+            "vision": 56,
+            "ballControl": 46
+        },
+        {
+            "id": "2",
+            "name": "Ye Daoxin",
+            "age": 34,
+            "weight": 65,
+            "height": 169,
+            "speed": 90,
+            "strength": 65,
+            "agility": 47,
+            "shotPower": 65,
+            "penalties": 59,
+            "longPassing": 60,
+            "shortPassing": 58,
+            "dribbling": 54,
+            "vision": 66,
+            "ballControl": 56
+        },
+        {
+            "id": "3",
+            "name": "Wu Yuhang",
+            "age": 24,
+            "weight": 62,
+            "height": 163,
+            "speed": 95,
+            "strength": 55,
+            "agility": 67,
+            "shotPower": 70,
+            "penalties": 45,
+            "longPassing": 56,
+            "shortPassing": 68,
+            "dribbling": 54,
+            "vision": 50,
+            "ballControl": 66
+        },
+        {
+            "id": "4",
+            "name": "Wang Tengda",
+            "age": 23,
+            "weight": 60,
+            "height": 170,
+            "speed": 70,
+            "strength": 60,
+            "agility": 60,
+            "shotPower": 55,
+            "penalties": 55,
+            "longPassing": 64,
+            "shortPassing": 68,
+            "dribbling": 60,
+            "vision": 50,
+            "ballControl": 65
+        }
+        
+    ]
+}
