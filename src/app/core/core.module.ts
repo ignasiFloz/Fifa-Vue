@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @NgModule({
   declarations: [
@@ -13,8 +15,9 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
   ],
   imports: [
     CommonModule,
-    BreadcrumbModule
-    
+    BreadcrumbModule,
+    TranslateModule,
+   
   ],
   exports: [
     HeaderComponent,

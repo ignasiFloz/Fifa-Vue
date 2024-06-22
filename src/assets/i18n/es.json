@@ -1,0 +1,18 @@
+{
+    "home": "Inicio",
+    "videos": "Videos",
+    "players": "Jugadores",
+    "name": "Nombre",
+    "age": "Edad",
+    "weight": "Peso",
+    "height": "Altura",
+    "speed": "Velocidad",
+    "strength": "Fuerza",
+    "shot_power": "Potencia de tiro",
+    "penalties": "Penaltis",
+    "long_passing": "Pase largo",
+    "short_passing": "Pase corto",
+    "dribbling": "Regate",
+    "vision": "Visión",
+    "ball_control": "Control de balón"
+  }

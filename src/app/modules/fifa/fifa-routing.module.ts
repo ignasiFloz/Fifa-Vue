@@ -8,7 +8,7 @@ const routes = [
     { 
         path:'',
         data: {
-            breadcrumb: 'HOME'
+            breadcrumb: 'Home'
           },
         children: [
 
@@ -21,14 +21,14 @@ const routes = [
             { 
                 path: ':id', 
                 data: {
-                    breadcrumb: 'PLAYERS'
+                    breadcrumb: 'Player'
                 },
                 component: PlayerDetailsComponent 
             },
             { 
                 path: ':id/videos', 
                 data: {
-                    breadcrumb: 'Player Videos'
+                    breadcrumb: 'Videos'
                 },
                 component: PlayerVideosComponent 
             }
