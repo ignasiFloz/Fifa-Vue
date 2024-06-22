@@ -1,0 +1,18 @@
+{
+    "home": "Home",
+    "videos": "Videos",
+    "players": "Players",
+    "name": "Name",
+    "age": "Age",
+    "weight": "Weight",
+    "height": "Height",
+    "speed": "Speed",
+    "strength": "Strength",
+    "shot_power": "Shot Power",
+    "penalties": "Penalties",
+    "long_passing": "Long Passing",
+    "short_passing": "Short Passing",
+    "dribbling": "Dribbling",
+    "vision": "Vision",
+    "ball_control": "Ball Control"
+  }
