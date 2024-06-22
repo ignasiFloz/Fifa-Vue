@@ -1,6 +1,7 @@
 import { IPlayer } from "./iplayer.interface";
 import { Person } from "./person.model";
 export class Player extends Person implements IPlayer{
+    
     shotPower: number;
     penalties: number;
     longPassing: number;
