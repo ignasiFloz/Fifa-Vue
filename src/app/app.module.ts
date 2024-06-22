@@ -8,6 +8,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CoreModule } from './core/core.module';
 import { FifaModule } from './modules/fifa/fifa.module';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -32,6 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     CoreModule,
     FifaModule,
+    CommonModule
     
   ],
   providers: [],
