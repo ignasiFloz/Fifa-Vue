@@ -1,4 +1,4 @@
 export const environment = {
-    production: true,
+    production: false,
     DATA_PLAYERS: '../assets/db/players.json',
 };
