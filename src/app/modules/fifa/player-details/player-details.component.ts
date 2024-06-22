@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FifaService } from '../../../services/fifa.service';
 
+
 @Component({
   selector: 'app-player-details',
   templateUrl: './player-details.component.html',
@@ -12,6 +13,8 @@ export class PlayerDetailsComponent implements OnInit {
   route = inject(ActivatedRoute)
   fifaService = inject(FifaService)
   playerId: string | null = null;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  playerCard: any;
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
@@ -25,7 +28,9 @@ export class PlayerDetailsComponent implements OnInit {
 
   showPlayerById(id: string): void {
     this.fifaService.getPlayerById(id).subscribe((player) => {
-      console.log(player, 'player');
-    });
+      this.playerCard = player;
+      console.log('Player:', player);
+      console.log('PlayerCard:', this.playerCard);
+    })
   }
 }
