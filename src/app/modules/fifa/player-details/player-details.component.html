@@ -2,7 +2,7 @@
     <div class="row pb-4">
         <h1 class="text-center">{{playerCard?.name}}</h1>
     </div>
-    <div class="row p-4">
+    <div class="row bg-dark p-4">
         <div class="col-md-4">
             <img [src]="playerCard?.cardUrl" alt="">
         </div>
@@ -73,11 +73,9 @@
         </div>
     </div>
     <div class="row ">
-        <div>
-            <button class="btn" [routerLink]="['']"> Home </button>
-        </div>
-        <div>
-            <button class="btn" (click)="navigateToVideos(playerCard?.id)" > Videos </button>
+        <div class="text-center mt-5">
+            <button class="btn btn-light" [routerLink]="['']"> Home </button>
+            <button class="btn btn-light" (click)="navigateToVideos(playerCard?.id)" > Videos </button>
         </div>
     </div>
 </div>
