@@ -25,7 +25,7 @@ export class BreadcrumbComponent implements OnInit{
       .subscribe(() => this.menuItems = this.createBreadcrumbs(this.activatedRoute.root));
   }
 
-  private createBreadcrumbs(route: ActivatedRoute, url: string = '#', breadcrumbs: MenuItem[] = []): MenuItem[] {
+  private createBreadcrumbs(route: ActivatedRoute, url: string = '', breadcrumbs: MenuItem[] = []): MenuItem[] {
     const children: ActivatedRoute[] = route.children;
     const a: MenuItem[] = [];
 
@@ -34,10 +34,10 @@ export class BreadcrumbComponent implements OnInit{
     }
 
     for (const child of children) {
-      // const routeURL: string = child.snapshot.url.map(segment => segment.path).join('/');
-     /*  if (routeURL !== '') {
+      const routeURL: string = child.snapshot.url.map(segment => segment.path).join('/');
+       if (routeURL !== '') {
         url += `/${routeURL}`;
-      } */
+      } 
 
       const label = child.snapshot.data[BreadcrumbComponent.ROUTE_DATA_BREADCRUMB];
       if ((label)) {
