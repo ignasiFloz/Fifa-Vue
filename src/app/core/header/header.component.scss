@@ -1,20 +1,32 @@
 #logo {
-    width: 260px;
-    height: 80px;
-    padding: 5px;
-    }
+  width: 250px;
+  height: 65px;
+}
   
-.navbar{  
-    display: flex;
-    width: 100%; 
-    justify-content: space-between;
-    background-color: #000000;
+.navbar {  
+  display: flex;
+  width: 100%; 
+  justify-content: space-between;
+  background-color: #000000;
+
+    &:hover {
+      color: #0a0a0a; 
     }
+}
     
 .form-select {
   width: auto;
   height: 5%;
   margin: 5px;
   font-weight: bold;
-  background-color: #e2ded5;
+  background-color: white;
+  border-radius: 20pt;
+  font-size: 9pt;
+
+  
+  &:hover {
+    color: #0a0a0a; 
+  }
 }
+
+
