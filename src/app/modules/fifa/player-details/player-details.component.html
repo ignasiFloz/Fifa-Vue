@@ -72,4 +72,12 @@
             </div>
         </div>
     </div>
+    <div class="row ">
+        <div>
+            <button class="btn" [routerLink]="['']"> Home </button>
+        </div>
+        <div>
+            <button class="btn" (click)="navigateToVideos(playerCard?.id)" > Videos </button>
+        </div>
+    </div>
 </div>
