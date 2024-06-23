@@ -23,14 +23,22 @@ const routes = [
                 data: {
                     breadcrumb: 'Player'
                 },
-                component: PlayerDetailsComponent 
-            },
-            { 
-                path: ':id/videos', 
-                data: {
-                    breadcrumb: 'Videos'
-                },
-                component: PlayerVideosComponent 
+                children: [
+                    {
+                        path: '',
+                        data: {
+                            breadcrumb: null
+                        },
+                        component: PlayerDetailsComponent,
+                    },
+                    { 
+                        path: ':id/videos', 
+                        data: {
+                            breadcrumb: 'Videos'
+                        },
+                        component: PlayerVideosComponent 
+                    }
+                ]
             }
         ]
     }
