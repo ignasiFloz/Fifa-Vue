@@ -34,6 +34,6 @@ export class PlayerDetailsComponent implements OnInit {
   }
 
   navigateToVideos(id: string): void {
-    this.router.navigate([id,'videos']);
+    this.router.navigate(['fifa',id,'videos']);
   }
 }
