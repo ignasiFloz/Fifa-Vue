@@ -32,7 +32,7 @@ const routes = [
                         component: PlayerDetailsComponent,
                     },
                     { 
-                        path: ':id/videos', 
+                        path: 'videos', 
                         data: {
                             breadcrumb: 'Videos'
                         },
