@@ -1,7 +1,13 @@
-.progress{
-    width: 70%;
+.progress {
+  width: 70%;
 }
 
-.progress-bar{
-    background-color: #70f468;
+.progress-bar {
+  background-color: #70f468;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

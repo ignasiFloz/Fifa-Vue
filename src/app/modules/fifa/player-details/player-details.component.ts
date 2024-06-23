@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FifaService } from '../../../services/fifa.service';
 
 
@@ -9,7 +9,7 @@ import { FifaService } from '../../../services/fifa.service';
   styleUrl: './player-details.component.scss'
 })
 export class PlayerDetailsComponent implements OnInit {
-
+  router = inject(Router)
   route = inject(ActivatedRoute)
   fifaService = inject(FifaService)
   playerId: string | null = null;
@@ -31,5 +31,9 @@ export class PlayerDetailsComponent implements OnInit {
  /*      console.log('Player:', player);
       console.log('PlayerCard:', this.playerCard); */
     })
+  }
+
+  navigateToVideos(id: string): void {
+    this.router.navigate([id,'videos']);
   }
 }
