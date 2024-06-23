@@ -28,7 +28,7 @@ export class PlayerDetailsComponent implements OnInit {
   showPlayerById(id: string): void {
     this.fifaService.getPlayerById(id).subscribe((player) => {
       this.playerCard = player;
- /*      console.log('Player:', player);
+ /*   console.log('Player:', player);
       console.log('PlayerCard:', this.playerCard); */
     })
   }

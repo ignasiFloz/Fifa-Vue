@@ -17,10 +17,12 @@
             "ballControl": 46,
             "imageUrl": "../../../../assets/images/YingJie-profile-pic.png",
             "cardUrl": "../../../../assets/images/card-yin-jie.png",
-            "video1": "https://www.youtube.com/embed/BzGKaMN0UkQ?si=TWTF7TVba4TKLc28",
-            "video2": "https://www.youtube.com/embed/nah-U95YBnE?si=n2-DdT8UKUHgTvVl",
-            "video3": "https://www.youtube.com/embed/1940RMrtoms?si=n4rDKu_1vuKqNMx-",
-            "video4": "https://www.youtube.com/embed/LpFN5iwxFhk?si=62UXPufFIOInDpHi"
+             "videoUrl": [
+             "https://www.youtube.com/embed/BzGKaMN0UkQ?si=TWTF7TVba4TKLc28",
+             "https://www.youtube.com/embed/nah-U95YBnE?si=n2-DdT8UKUHgTvVl",
+             "https://www.youtube.com/embed/1940RMrtoms?si=n4rDKu_1vuKqNMx-",
+             "https://www.youtube.com/embed/LpFN5iwxFhk?si=62UXPufFIOInDpHi"
+            ]
         },
         {
             "id": "2",
@@ -40,10 +42,12 @@
             "ballControl": 56,
             "imageUrl": "../../../../assets/images/YeDaoxin-profile-pic.png",
             "cardUrl": "../../../../assets/images/card-ye-daoxin.png",
-            "video1": "https://www.youtube.com/embed/mIpAQbn06sM?si=0sGpFiGMXCKi2uCp",
-            "video2": "https://www.youtube.com/embed/sQLdQ532_Xo?si=3Dijspo_KRUV6kck",
-            "video3": "https://www.youtube.com/embed/RgosJpwEmpA?si=Puw5LWFGh5NgRZDZ",
-            "video4": "https://www.youtube.com/embed/aBA-_mZUhvc?si=KvvpSSRAvDjpnZAD"
+            "videoUrl": [
+             "https://www.youtube.com/embed/mIpAQbn06sM?si=0sGpFiGMXCKi2uCp",
+             "https://www.youtube.com/embed/sQLdQ532_Xo?si=3Dijspo_KRUV6kck",
+             "https://www.youtube.com/embed/RgosJpwEmpA?si=Puw5LWFGh5NgRZDZ",
+             "https://www.youtube.com/embed/aBA-_mZUhvc?si=KvvpSSRAvDjpnZAD"
+            ]
         },
         {
             "id": "3",
@@ -63,10 +67,12 @@
             "ballControl": 66,
             "imageUrl": "../../../../assets/images/WuYuhang-profile-pic.png",
             "cardUrl": "../../../../assets/images/card-wu-yuhang.png",
-            "video1": "https://www.youtube.com/embed/guzGnlE4Mho?si=kkP8NJnwnDs7G0zR",
-            "video2": "https://www.youtube.com/embed/8lv8Yz0cHNM?si=4PUWRzZmKnB3RuYP",
-            "video3": "https://www.youtube.com/embed/WsPr1j2rKMs?si=7SRCTPEGLp58e7qi",
-            "video4": "https://www.youtube.com/embed/mwdmlOnDUTA?si=glaTKDkRdqpWOMOa" 
+            "videoUrl": [
+             "https://www.youtube.com/embed/guzGnlE4Mho?si=kkP8NJnwnDs7G0zR",
+             "https://www.youtube.com/embed/8lv8Yz0cHNM?si=4PUWRzZmKnB3RuYP",
+             "https://www.youtube.com/embed/WsPr1j2rKMs?si=7SRCTPEGLp58e7qi",
+             "https://www.youtube.com/embed/mwdmlOnDUTA?si=glaTKDkRdqpWOMOa" 
+            ]
         },
         {
             "id": "4",
@@ -86,10 +92,11 @@
             "ballControl": 65,
             "imageUrl": "../../../../assets/images/WangTenda-profile-pic.png",
             "cardUrl": "../../../../assets/images/card-wang-tengda.png",
-            "video1": "https://www.youtube.com/embed/mM7aZgTuP_I?si=-a1-gUuj6-LZhOQ",
-            "video2": "https://www.youtube.com/embed/e_X_lNsYFpk?si=85zPGVSXxk9YJ967",
-            "video3": "https://www.youtube.com/embed/NvgI2iVHfZw?si=0-XPvSh4v55XyfoV",
-            "video4": "https://www.youtube.com/embed/nTEvww2NumY?si=Ky4agRmtp7zSu_qf"
-
+            "videoUrl": [
+             "https://www.youtube.com/embed/mM7aZgTuP_I?si=-a1-gUuj6-LZhOQ",
+             "https://www.youtube.com/embed/e_X_lNsYFpk?si=85zPGVSXxk9YJ967",
+             "https://www.youtube.com/embed/NvgI2iVHfZw?si=0-XPvSh4v55XyfoV",
+             "https://www.youtube.com/embed/nTEvww2NumY?si=Ky4agRmtp7zSu_qf"
+            ]
         }
     ]
