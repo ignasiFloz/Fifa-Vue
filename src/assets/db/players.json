@@ -1,5 +1,4 @@
-{
-    "players":[
+[
         {
             "id": "1",
             "name": "Yin Jie",
@@ -17,7 +16,7 @@
             "vision": 56,
             "ballControl": 46,
             "imageUrl": "../../../../assets/images/YingJie-profile-pic.png",
-            "cardUrl": "../images/card-yin-jie"
+            "cardUrl": "../../../../assets/images/card-yin-jie.png"
         },
         {
             "id": "2",
@@ -36,7 +35,7 @@
             "vision": 66,
             "ballControl": 56,
             "imageUrl": "../../../../assets/images/YeDaoxin-profile-pic.png",
-            "cardUrl": "../images/card-ye-daoxin"
+            "cardUrl": "../../../../assets/images/card-ye-daoxin.png"
         },
         {
             "id": "3",
@@ -55,7 +54,7 @@
             "vision": 50,
             "ballControl": 66,
             "imageUrl": "../../../../assets/images/WuYuhang-profile-pic.png",
-            "cardUrl": "../images/card-wu-yuhang"
+            "cardUrl": "../../../../assets/images/card-wu-yuhang.png"
         },
         {
             "id": "4",
@@ -74,8 +73,6 @@
             "vision": 50,
             "ballControl": 65,
             "imageUrl": "../../../../assets/images/WangTenda-profile-pic.png",
-            "cardUrl": "../images/card-wang-tengda"
+            "cardUrl": "../../../../assets/images/card-wang-tengda.png"
         }
-        
     ]
-}
