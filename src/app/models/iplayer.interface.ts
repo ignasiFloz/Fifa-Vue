@@ -8,4 +8,5 @@ export interface IPlayer {
     ballControl: number;
     imageUrl: string;
     cardUrl: string;
+    videoUrl: string[];
 }
