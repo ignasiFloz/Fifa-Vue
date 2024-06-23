@@ -23,14 +23,13 @@ export class PlayerDetailsComponent implements OnInit {
         this.showPlayerById(this.playerId)
       }
     });
-    
   }
 
   showPlayerById(id: string): void {
     this.fifaService.getPlayerById(id).subscribe((player) => {
       this.playerCard = player;
-      console.log('Player:', player);
-      console.log('PlayerCard:', this.playerCard);
+ /*      console.log('Player:', player);
+      console.log('PlayerCard:', this.playerCard); */
     })
   }
 }

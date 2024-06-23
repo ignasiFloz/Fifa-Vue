@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     this.fifaService.getPlayers().subscribe((data) => {
       this.players = data;
       
-      console.log(this.players.players)
+      console.log(this.players)
     });
   }
 

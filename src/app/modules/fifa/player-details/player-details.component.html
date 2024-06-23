@@ -1,73 +1,73 @@
 <div class="p-5">
     <div class="row pb-4">
-        <h1 class="text-center">YEN CHU SHING</h1>
+        <h1 class="text-center">{{playerCard?.name}}</h1>
     </div>
     <div class="row p-4">
         <div class="col-md-4">
-            <img src="../../../../assets/images/card-wang-tengda.png" alt="">
+            <img [src]="playerCard?.cardUrl" alt="">
         </div>
         <div class="col-md-4 pt-5">
             <div class="pb-2">
-                <span>{{'speed' | translate }}</span>
+                <span>{{'speed' | translate}}</span>
                 <div class="progress">
-                    <div class="progress-bar" [style.width.%]="">89</div>
+                    <div class="progress-bar" [style.width.%]="playerCard?.speed">{{playerCard?.speed}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Strength</span>
+                <span>{{'strength' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar" [style.width.%]=""></div>
+                    <div class="progress-bar" [style.width.%]="playerCard?.strength">{{playerCard?.strength}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Agility</span>
+                <span>{{'agility' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar" [style.width.%]="playerCard?.agility">{{playerCard?.agility}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Shot Power</span>
+                <span> {{'shot_power' | translate }} </span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.shotPower">{{playerCard?.shotPower}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Penalties</span>
+                <span>{{'penalties' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.penalties">{{playerCard?.penalties}}</div>
                 </div>
             </div>
             
         </div>
         <div class="col-md-4 pt-5">
             <div class="pb-2">
-                <span>Long Passing</span>
+                <span>{{'long_passing' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.longPassing">{{playerCard?.longPassing}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Short Passing</span>
+                <span>{{'short_passing' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.shortPassing">{{playerCard?.shortPassing}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Dribling</span>
+                <span>{{'dribbling' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.dribbling">{{playerCard?.dribbling}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Vision</span>
+                <span>{{'vision' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.vision">{{playerCard?.vision}}</div>
                 </div>
             </div>
             <div class="pb-2">
-                <span>Ball Control</span>
+                <span>{{'ball_control' | translate }}</span>
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar"  [style.width.%]="playerCard?.ballControl">{{playerCard?.ballControl}}</div>
                 </div>
             </div>
         </div>

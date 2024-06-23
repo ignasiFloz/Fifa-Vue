@@ -1,6 +1,5 @@
-
 <div class="row">
-  <ng-container *ngFor="let player of players.players">
+  <ng-container *ngFor="let player of players">
     <div class="col-sm-3">
       <div class="card" (click)="viewPlayerDetails(player.id)">
         <img [src]="player.imageUrl" alt="Player Image">

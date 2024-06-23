@@ -18,8 +18,12 @@ export class FifaService {
   }
 
   getPlayerById(id: string): Observable<Player | undefined> {
+    this.getPlayers().forEach(player => console.log(player));
     return this.getPlayers().pipe(
-      map((players) => players.find((player) => player.id === id))
+      map(players => {
+        
+        return players.find(player => player.id === id);
+      })
     );
   }
 

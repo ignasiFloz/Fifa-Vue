@@ -4,6 +4,7 @@
     "players": "Players",
     "name": "Name",
     "age": "Age",
+    "agility": "Agility",
     "weight": "Weight",
     "height": "Height",
     "speed": "Speed",
