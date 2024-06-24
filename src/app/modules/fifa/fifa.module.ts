@@ -6,12 +6,14 @@ import { PlayerVideosComponent } from './player-videos/player-videos.component';
 import { FifaRoutingModule } from './fifa-routing.module';
 import { FifaService } from '../../services/fifa.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { Decrypt } from '../../services/crypt.service';
 
 
 
 @NgModule({
   providers: [ 
-    FifaService 
+    FifaService ,
+    Decrypt
   ],
   declarations: [
     HomeComponent,

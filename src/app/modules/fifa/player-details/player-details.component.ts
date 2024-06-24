@@ -1,6 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FifaService } from '../../../services/fifa.service';
+import { Decrypt } from '../../../services/crypt.service';
+import { environment } from '../../../../environments/environment.development';
 
 
 @Component({
@@ -8,10 +10,14 @@ import { FifaService } from '../../../services/fifa.service';
   templateUrl: './player-details.component.html',
   styleUrl: './player-details.component.scss'
 })
+
 export class PlayerDetailsComponent implements OnInit {
+  cryptService = inject(Decrypt);
   router = inject(Router)
   route = inject(ActivatedRoute)
   fifaService = inject(FifaService)
+
+  decripted = this.cryptService.decrypt(environment.DATA_PLAYERS)
   playerId: string | null = null;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   playerCard: any;
@@ -26,7 +32,7 @@ export class PlayerDetailsComponent implements OnInit {
   }
 
   showPlayerById(id: string): void {
-    this.fifaService.getPlayerById(id).subscribe((player) => {
+    this.fifaService.getPlayerById(id,this.decripted).subscribe((player) => {
       this.playerCard = player;
  /*   console.log('Player:', player);
       console.log('PlayerCard:', this.playerCard); */
