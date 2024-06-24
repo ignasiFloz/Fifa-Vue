@@ -9,5 +9,4 @@ import { Player } from '../../../../models/player.model';
 export class PlayerStatsComponent {
   @Input() playerCard: Player | null = null;
 
-
 }
