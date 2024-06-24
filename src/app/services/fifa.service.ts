@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment.development';
 import { Observable, map } from 'rxjs';
 import { Player } from '../models/player.model';
 import { inject } from '@angular/core';
@@ -13,13 +12,13 @@ import { FifaModule } from '../modules/fifa/fifa.module';
 export class FifaService {
   private http = inject(HttpClient)
   
-  getPlayers(): Observable<Player[]> {
-    return this.http.get<Player[]>(environment.DATA_PLAYERS)
+  getPlayers(url : string): Observable<Player[]> {
+    return this.http.get<Player[]>(url)
   }
 
-  getPlayerById(id: string): Observable<Player | undefined> {
-    this.getPlayers().forEach(player => console.log(player));
-    return this.getPlayers().pipe(
+  getPlayerById(id: string, url : string): Observable<Player | undefined> {
+    this.getPlayers(url).forEach(player => console.log(player));
+    return this.getPlayers(url).pipe(
       map(players => {
         
         return players.find(player => player.id === id);
