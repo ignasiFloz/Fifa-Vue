@@ -1,0 +1,25 @@
+.progress {
+    width: 70%;
+  
+    .progress-bar {
+      background-color: #70f468;
+      color:black;
+    }
+}
+  
+img {
+transition: transform 0.3s ease;
+
+&:hover {
+    transform: scale(1.1);
+}
+}
+
+.row {
+border-radius: 20pt;
+
+}
+
+span {
+font-size: 12pt;
+}

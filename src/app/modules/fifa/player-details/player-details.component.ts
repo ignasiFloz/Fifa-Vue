@@ -4,7 +4,6 @@ import { FifaService } from '../../../services/fifa.service';
 import { Decrypt } from '../../../services/crypt.service';
 import { environment } from '../../../../environments/environment.development';
 
-
 @Component({
   selector: 'app-player-details',
   templateUrl: './player-details.component.html',
@@ -34,8 +33,6 @@ export class PlayerDetailsComponent implements OnInit {
   showPlayerById(id: string): void {
     this.fifaService.getPlayerById(id,this.decripted).subscribe((player) => {
       this.playerCard = player;
- /*   console.log('Player:', player);
-      console.log('PlayerCard:', this.playerCard); */
     })
   }
 

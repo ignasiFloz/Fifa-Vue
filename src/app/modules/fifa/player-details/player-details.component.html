@@ -2,76 +2,7 @@
     <div class="row pb-4">
         <h1 class="text-center">{{playerCard?.name}}</h1>
     </div>
-    <div class="row bg-dark p-4">
-        <div class="col-md-4">
-            <img [src]="playerCard?.cardUrl"  (click)="navigateToVideos(playerCard?.id)">
-        </div>
-        <div class="col-md-4 pt-5">
-            <div class="pb-2">
-                <span>{{'speed' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar" [style.width.%]="playerCard?.speed">{{playerCard?.speed}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'strength' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar" [style.width.%]="playerCard?.strength">{{playerCard?.strength}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'agility' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar" [style.width.%]="playerCard?.agility">{{playerCard?.agility}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span> {{'shot_power' | translate }} </span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.shotPower">{{playerCard?.shotPower}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'penalties' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.penalties">{{playerCard?.penalties}}</div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="col-md-4 pt-5">
-            <div class="pb-2">
-                <span>{{'long_passing' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.longPassing">{{playerCard?.longPassing}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'short_passing' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.shortPassing">{{playerCard?.shortPassing}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'dribbling' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.dribbling">{{playerCard?.dribbling}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'vision' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.vision">{{playerCard?.vision}}</div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <span>{{'ball_control' | translate }}</span>
-                <div class="progress">
-                    <div class="progress-bar"  [style.width.%]="playerCard?.ballControl">{{playerCard?.ballControl}}</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-player-stats [playerCard]="playerCard"></app-player-stats>
     <div class="row">
         <div class="text-center mt-5">
             <button class="btn btn-light me-5" [routerLink]="['']"> Home </button>

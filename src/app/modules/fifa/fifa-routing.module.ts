@@ -7,35 +7,25 @@ import { RouterModule } from "@angular/router";
 const routes = [
     { 
         path:'',
-        data: {
-            breadcrumb: 'Home'
-          },
+        data: { breadcrumb: 'Home'},
         children: [
 
             { path: '',
-                data: {
-                    breadcrumb: null
-                }, 
+                data: { breadcrumb: null }, 
                 component: HomeComponent 
             },
             { 
                 path: ':id', 
-                data: {
-                    breadcrumb: 'Player'
-                },
+                data: { breadcrumb: 'Player' },
                 children: [
                     {
                         path: '',
-                        data: {
-                            breadcrumb: null
-                        },
+                        data: { breadcrumb: null },
                         component: PlayerDetailsComponent,
                     },
                     { 
                         path: 'videos', 
-                        data: {
-                            breadcrumb: 'Videos'
-                        },
+                        data: { breadcrumb: 'Videos' },
                         component: PlayerVideosComponent 
                     }
                 ]

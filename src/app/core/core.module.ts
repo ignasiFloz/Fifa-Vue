@@ -23,6 +23,7 @@ import { TranslateModule } from '@ngx-translate/core';
     HeaderComponent,
     FooterComponent,
     BreadcrumbComponent
-  ] 
+  ],
+  
 })
 export class CoreModule { }
