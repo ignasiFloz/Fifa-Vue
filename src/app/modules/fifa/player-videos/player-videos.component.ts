@@ -3,6 +3,9 @@ import { FifaService } from '../../../services/fifa.service';
 import { Player } from '../../../models/player.model';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { environment } from '../../../../environments/environment.development';
+import { Decrypt } from '../../../services/crypt.service';
+
 @Component({
   selector: 'app-player-videos',
   templateUrl: './player-videos.component.html',
@@ -12,11 +15,13 @@ export class PlayerVideosComponent implements OnInit{
   fifaService = inject(FifaService);
   route = inject(ActivatedRoute);
   sanitizer = inject(DomSanitizer);
-
+  cryptService = inject(Decrypt);
+  
 
   playerId: string | null = null;
   player?: Player = {} as Player;
   videoSanitized?: SafeResourceUrl[] = [];
+  decripted: string = this.cryptService.decrypt(environment.DATA_PLAYERS);
 
   ngOnInit(): void {
     this.playerId = this.getID();
@@ -31,7 +36,7 @@ export class PlayerVideosComponent implements OnInit{
   }
   //caching the videos
   showPlayerById(id: string): void {
-    this.fifaService.getPlayerById(id).subscribe((player) => {
+    this.fifaService.getPlayerById(id, this.decripted).subscribe((player) => {
       this.player = player;
       console.log(this.player)
         if (this.player?.videoUrl) {

@@ -7,12 +7,14 @@ import { FifaRoutingModule } from './fifa-routing.module';
 import { FifaService } from '../../services/fifa.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { PlayerStatsComponent } from './player-details/player-stats/player-stats.component';
+import { Decrypt } from '../../services/crypt.service';
 
 
 
 @NgModule({
   providers: [ 
-    FifaService 
+    FifaService ,
+    Decrypt
   ],
   declarations: [
     HomeComponent,
