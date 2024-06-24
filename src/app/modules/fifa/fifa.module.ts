@@ -6,8 +6,9 @@ import { PlayerVideosComponent } from './player-videos/player-videos.component';
 import { FifaRoutingModule } from './fifa-routing.module';
 import { FifaService } from '../../services/fifa.service';
 import { TranslateModule } from '@ngx-translate/core';
-import { Decrypt } from '../../services/crypt.service';
 import { PlayerStatsComponent } from './player-details/player-stats/player-stats.component';
+import { Decrypt } from '../../services/crypt.service';
+
 
 
 
