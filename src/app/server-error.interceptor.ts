@@ -12,18 +12,18 @@ import { retry, catchError } from 'rxjs/operators';
 @Injectable()
 export class ServerErrorInterceptor implements HttpInterceptor {
   intercept(
-    request: HttpRequest<any>,
+    request: HttpRequest<unknown>,
     next: HttpHandler
-  ): Observable<HttpEvent<any>> {
+  ): Observable<HttpEvent<unknown>> {
     return next.handle(request).pipe(
-      retry(1),
+      retry(0),
       catchError((error: HttpErrorResponse) => {
         if (error.status === 401) {
           // refresh token
         } else {
           return throwError(error);
         }
-        return throwError(error);
+        return throwError('Unkown error');
       })
     );
   }

@@ -2,7 +2,7 @@ import { Injectable, NgZone } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-import { ErrorHandlerDialogComponent } from '../components/error-handler-dialog/error-handler-dialog.component';
+import { ErrorHandlerDialogComponent } from '../shared/error-handler-dialog/error-handler-dialog.component';
 
 @Injectable({
   providedIn: 'root',
