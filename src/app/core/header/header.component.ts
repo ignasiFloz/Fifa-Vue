@@ -10,7 +10,6 @@ export class HeaderComponent {
 
   private translationService = inject(TranslationService)
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onLanguageChange(event: any) {
     const selectedLanguage = event.target.value;
     this.translationService.switchLanguage(selectedLanguage);
