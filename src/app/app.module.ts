@@ -9,6 +9,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CoreModule } from './core/core.module';
 import { FifaModule } from './modules/fifa/fifa.module';
 import { CommonModule } from '@angular/common';
+import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 
 
@@ -18,7 +19,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ErrorPageComponent
   ],
   imports: [
     HttpClientModule,
