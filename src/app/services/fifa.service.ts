@@ -17,7 +17,6 @@ export class FifaService {
   }
 
   getPlayerById(id: string, url : string): Observable<Player | undefined> {
-    this.getPlayers(url).forEach(player => console.log(player));
     return this.getPlayers(url).pipe(
       map(players => {
         

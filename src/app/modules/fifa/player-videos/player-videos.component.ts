@@ -26,7 +26,6 @@ export class PlayerVideosComponent implements OnInit{
   ngOnInit(): void {
     this.playerId = this.getID();
     if (this.playerId) {
-      console.log(this.playerId)
       this.showPlayerById(this.playerId);
     }
   }
@@ -38,11 +37,9 @@ export class PlayerVideosComponent implements OnInit{
   showPlayerById(id: string): void {
     this.fifaService.getPlayerById(id, this.decripted).subscribe((player) => {
       this.player = player;
-      console.log(this.player)
         if (this.player?.videoUrl) {
         this.player.videoUrl.forEach((video) => {
           this.videoSanitized?.push(this.sanitizer.bypassSecurityTrustResourceUrl(video));
-          console.log(this.videoSanitized)
         })
       }  
     });

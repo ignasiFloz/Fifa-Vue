@@ -19,15 +19,13 @@ export class HomeComponent implements OnInit {
   players: any = [];
   decripted = this.cryptService.decrypt(environment.DATA_PLAYERS)
   ngOnInit() {
-    console.log('Password :' + this.decripted);
+    ('Password :' + this.decripted);
     this.allPlayers();
   }
 
   allPlayers() {
     this.fifaService.getPlayers(this.decripted).subscribe((data) => {
       this.players = data;
-      
-      console.log(this.players)
     });
   }
 
