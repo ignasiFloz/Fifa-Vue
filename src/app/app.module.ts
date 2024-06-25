@@ -1,14 +1,16 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClient, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CoreModule } from './core/core.module';
 import { FifaModule } from './modules/fifa/fifa.module';
 import { CommonModule } from '@angular/common';
+import { GlobalErrorHandler } from './global-error-handler';
+import { ServerErrorInterceptor } from './server-error.interceptor';
 
 
 
@@ -36,7 +38,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     CommonModule
     
   ],
-  providers: [],
+  providers: [
+    { provide: ErrorHandler, useClass: GlobalErrorHandler },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ServerErrorInterceptor,
+      multi: true,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
