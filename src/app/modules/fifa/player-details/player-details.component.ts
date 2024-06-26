@@ -16,7 +16,7 @@ export class PlayerDetailsComponent implements OnInit {
   route = inject(ActivatedRoute)
   fifaService = inject(FifaService)
 
-  decripted = this.cryptService.decrypt(environment.DATA_PLAYERS)
+  decripted: string = environment.DATA_PLAYERS
   playerId: string | null = null;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   playerCard: any;

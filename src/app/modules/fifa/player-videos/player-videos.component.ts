@@ -21,7 +21,7 @@ export class PlayerVideosComponent implements OnInit{
   playerId: string | null = null;
   player?: Player = {} as Player;
   videoSanitized?: SafeResourceUrl[] = [];
-  decripted: string = this.cryptService.decrypt(environment.DATA_PLAYERS);
+  decripted: string = environment.DATA_PLAYERS;
 
   ngOnInit(): void {
     this.playerId = this.getID();

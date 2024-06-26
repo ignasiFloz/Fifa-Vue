@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   players: any = [];
-  decripted = this.cryptService.decrypt(environment.DATA_PLAYERS)
+  decripted: string = environment.DATA_PLAYERS
   ngOnInit() {
     ('Password :' + this.decripted);
     this.allPlayers();

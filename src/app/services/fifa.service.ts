@@ -4,12 +4,13 @@ import { Observable, map } from 'rxjs';
 import { Player } from '../models/player.model';
 import { inject } from '@angular/core';
 import { FifaModule } from '../modules/fifa/fifa.module';
+import { fifaContract } from '../models/services-contracts/fifa-contract';
 
 @Injectable({
   providedIn: FifaModule
 })
 
-export class FifaService {
+export class FifaService extends fifaContract{
   private http = inject(HttpClient)
   
   getPlayers(url : string): Observable<Player[]> {
@@ -25,5 +26,5 @@ export class FifaService {
     );
   }
 
-
+  
 }

@@ -1,6 +1,8 @@
 import {Decrypt} from '../../src/app/services/crypt.service';
 const decrypt = new Decrypt()
+
 export const environment = {
     production: false,
-    DATA_PLAYERS: decrypt.encrypt('../assets/db/players.json'),
+    DATA_PLAYERS: decrypt.decrypt('U2FsdGVkX19u++34AY7OVl2cYW5eAGOgbqsrUN5/INiSbojHuFf8+41wvz/3EHVZ')   ,
+   
 };
